@@ -32,20 +32,20 @@ namespace BT2Remake
             sub[1].AddSubjects("Lý");
             sub[2].AddSubjects("Hóa");
             sub[3].AddSubjects("Anh");
-
+            
             var SinhVien1 = new Student(new List<Subject>() { sub[0] }) { id = 2380602440, name = "Nguyen Cong Quang", age = 20, room = classroom1};
-            var SinhVien4 = new Student(new List<Subject>() { sub[3] }) { id = 2380602441, name = "Nguyen Cong Tuan", age = 20, room = classroom1 };
+            var SinhVien2 = new Student(new List<Subject>() { sub[3] }) { id = 2380602441, name = "Nguyen Cong Tuan", age = 20, room = classroom1 };
             var GiaoVien1 = new Teacher() { name = "Nguyen Van Nam" , age = 40};
             classroom1.AddStudent(SinhVien1);
-            classroom1.AddStudent(SinhVien4);
+            classroom1.AddStudent(SinhVien2);
             classroom1.AddTeacher(GiaoVien1);
 
-            var SinhVien2 = new Student(new List<Subject>() { sub[1] , sub[2] }) { id = 2380541234, name = "Huỳnh Ngọc Anh Tuấn", age = 20, room = classroom2 };
+            var SinhVien3 = new Student(new List<Subject>() { sub[1] , sub[2] }) { id = 2380541234, name = "Huỳnh Ngọc Anh Tuấn", age = 20, room = classroom2 };
             var GiaoVien2 = new Teacher() { name = "Nguyễn Dzac Du Trinh", age = 45 };
             classroom2.AddStudent(SinhVien2);
             classroom2.AddTeacher(GiaoVien2);
 
-            var SinhVien3 = new Student(new List<Subject>() { sub[2] , sub[3] }) { id = 2381234568, name = "Lê Huỳnh Ngọc", age = 20, room = classroom3 };
+            var SinhVien4 = new Student(new List<Subject>() { sub[2] , sub[3] }) { id = 2381234568, name = "Lê Huỳnh Ngọc", age = 20, room = classroom3 };
             var GiaoVien3 = new Teacher() { name = "Kim Phụng", age = 48 };
             classroom3.AddStudent(SinhVien3);
             classroom3.AddTeacher(GiaoVien3);
